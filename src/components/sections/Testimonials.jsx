@@ -73,50 +73,6 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Additional Stats */}
-        <div className="mt-16">
-          <div className="bg-white rounded-lg p-8 shadow-md">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary-red mb-2">500+</div>
-                <div className="text-gray-600">Happy Students</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary-red mb-2">90%+</div>
-                <div className="text-gray-600">A & A* Grades</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary-red mb-2">15+</div>
-                <div className="text-gray-600">Countries Served</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-heading font-semibold text-neutral-dark mb-4">
-            Ready to Join Our Success Stories?
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Start your journey towards academic excellence with British Educational Network today.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/+923001234567?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN)."
-              className="bg-primary-red text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300"
-            >
-              Get Started Today
-            </a>
-            <a
-              href="https://wa.me/+923001234567?text=Hello! I would like to book a free trial class at BEN."
-              className="bg-transparent text-primary-red border-2 border-primary-red px-8 py-3 rounded-lg font-semibold hover:bg-primary-red hover:text-white transition-all duration-300"
-            >
-              Book Free Trial
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -152,7 +152,7 @@ const ContactInfo = () => {
                   <div className="text-xs text-gray-600">Followers</div>
                 </div>
                 <div>
-                  <div className="text-lg font-bold text-primary-red">500+</div>
+                  <div className="text-lg font-bold text-primary-red">100+</div>
                   <div className="text-xs text-gray-600">Posts</div>
                 </div>
                 <div>

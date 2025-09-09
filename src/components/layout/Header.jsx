@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Button from '../ui/Button';
 
@@ -13,6 +14,7 @@ const Header = () => {
   const navItems = [
     { name: 'Home', href: '/', current: false },
     { name: 'Academics', href: '/academics', current: false },
+    { name: 'Tuition Department', href: '/tuition-department', current: false },
     { name: 'Instructors', href: '/instructors', current: false },
     { name: 'Contact', href: '/contact', current: false },
   ];
@@ -24,8 +26,15 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="bg-primary-red text-white p-2 rounded-lg mr-3">
-                <FontAwesomeIcon icon={faGraduationCap} className="h-6 w-6" />
+              <div className="mr-3">
+                <Image
+                  src="/logo.png"
+                  alt="BEN Logo"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                  priority
+                />
               </div>
               <div>
                 <h1 className="text-xl font-heading font-bold text-primary-red">BEN</h1>

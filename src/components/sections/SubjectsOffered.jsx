@@ -1,121 +1,141 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faCalculator, 
-  faAtom, 
   faFlask, 
-  faDna, 
   faBookOpen, 
-  faLaptopCode,
   faChartLine,
-  faBriefcase,
-  faReceipt
+  faUsers,
+  faLightbulb,
+  faClipboardCheck,
+  faChartBar
 } from '@fortawesome/free-solid-svg-icons';
-import Card from '../ui/Card';
-import { oLevelSubjects, aLevelSubjects } from '../../data/subjects';
 
 const SubjectsOffered = () => {
-  const iconMap = {
-    calculator: faCalculator,
-    atom: faAtom,
-    flask: faFlask,
-    dna: faDna,
-    'book-open': faBookOpen,
-    'laptop-code': faLaptopCode,
-    'chart-line': faChartLine,
-    briefcase: faBriefcase,
-    receipt: faReceipt
-  };
-
-  const SubjectCard = ({ subject, level }) => (
-    <Card hover={true} className="text-center h-full">
-      <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
-        level === 'O' ? 'bg-blue-100 text-blue-600' : 'bg-red-100 text-red-600'
-      }`}>
-        <FontAwesomeIcon 
-          icon={iconMap[subject.icon] || faBookOpen} 
-          className="text-2xl" 
-        />
-      </div>
-      <h3 className="text-xl font-heading font-semibold text-neutral-dark mb-2">
-        {subject.name}
-      </h3>
-      <p className="text-gray-600 text-sm leading-relaxed">
-        {subject.description}
-      </p>
-    </Card>
-  );
 
   return (
     <section className="py-16 bg-neutral-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* BEN Departments - 4 White Columns */}
+        <div className="bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-dark mb-4">
-            Subjects Offered
+              BEN DEPARTMENTS
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            We offer specialized coaching for Cambridge (CAIE) and Edexcel exams with 
-            comprehensive coverage of all subjects.
+              Our specialized departments provide comprehensive support across all academic areas 
+              with expert instructors and proven methodologies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* O Levels */}
-          <div>
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-heading font-bold text-blue-600 mb-2">
-                O Levels
+          {/* BEN Departments Grid - 4 White Columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Tuition Department */}
+            <a href="/tuition-department" className="block">
+              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
+                  <FontAwesomeIcon icon={faUsers} className="text-white text-3xl" />
+                </div>
+                <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                  Tuition Department
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Comprehensive O & A Level coaching with personalized attention and expert guidance for academic excellence.
+                </p>
+              </div>
+            </a>
+            
+            {/* English Language Department */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
+                <FontAwesomeIcon icon={faBookOpen} className="text-white text-3xl" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                English Language
               </h3>
-              <p className="text-gray-600">
-                Foundation courses for secondary education
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Advanced English language skills, literature, and communication excellence for global opportunities.
               </p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {oLevelSubjects.map((subject) => (
-                <SubjectCard key={subject.id} subject={subject} level="O" />
-              ))}
-            </div>
+
+            {/* Entry Test Department */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
+                <FontAwesomeIcon icon={faChartLine} className="text-white text-3xl" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                Entry Test Department
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Specialized coaching for university entrance exams and competitive tests with proven success rates.
+              </p>
           </div>
 
-          {/* A Levels */}
-          <div>
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-heading font-bold text-red-600 mb-2">
-                A Levels
+            {/* Medical Courses */}
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
+                <FontAwesomeIcon icon={faFlask} className="text-white text-3xl" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                Medical Courses
               </h3>
-              <p className="text-gray-600">
-                Advanced courses for university preparation
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Pre-medical and medical entrance preparation with biology and chemistry focus for medical careers.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {aLevelSubjects.map((subject) => (
-                <SubjectCard key={subject.id} subject={subject} level="A" />
-              ))}
             </div>
           </div>
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-12 text-center">
-          <div className="bg-white rounded-lg p-8 shadow-md max-w-4xl mx-auto">
-            <h4 className="text-xl font-heading font-semibold text-neutral-dark mb-4">
+
+        {/* Our Teaching Approach - Simple */}
+        <div className="mt-16">
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
+            {/* Section Header */}
+            <div className="text-center mb-8">
+              <h4 className="text-2xl font-heading font-bold text-neutral-dark mb-3">
               Our Teaching Approach
             </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-              <div>
-                <h5 className="font-semibold text-primary-red mb-2">Concept Clarity</h5>
-                <p className="text-gray-600">Building strong foundations with clear explanations</p>
+              <p className="text-gray-600">
+                We focus on a comprehensive methodology that ensures student success
+              </p>
+            </div>
+
+            {/* Teaching Methods - Three Columns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FontAwesomeIcon icon={faLightbulb} className="text-white text-lg" />
+                </div>
+                <h5 className="text-lg font-heading font-semibold text-neutral-dark mb-2">
+                  Concept Clarity
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Building strong foundations with clear explanations and real-world examples
+                </p>
               </div>
-              <div>
-                <h5 className="font-semibold text-primary-red mb-2">Exam Techniques</h5>
-                <p className="text-gray-600">Past paper drills and mark scheme strategies</p>
+
+              <div className="text-center">
+                <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FontAwesomeIcon icon={faClipboardCheck} className="text-white text-lg" />
+                </div>
+                <h5 className="text-lg font-heading font-semibold text-neutral-dark mb-2">
+                  Exam Techniques
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Past paper drills and mark scheme strategies for maximum scores
+                </p>
               </div>
-              <div>
-                <h5 className="font-semibold text-primary-red mb-2">Regular Assessments</h5>
-                <p className="text-gray-600">Weekly & monthly tests for progress tracking</p>
+
+              <div className="text-center">
+                <div className="w-12 h-12 bg-primary-red rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FontAwesomeIcon icon={faChartBar} className="text-white text-lg" />
+                </div>
+                <h5 className="text-lg font-heading font-semibold text-neutral-dark mb-2">
+                  Regular Assessments
+                </h5>
+                <p className="text-gray-600 text-sm">
+                  Weekly & monthly tests for continuous progress tracking
+                </p>
               </div>
             </div>
           </div>
