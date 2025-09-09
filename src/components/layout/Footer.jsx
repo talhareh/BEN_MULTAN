@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPhone, 
@@ -40,8 +41,14 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="bg-primary-red text-white p-2 rounded-lg mr-3">
-                <FontAwesomeIcon icon={faGraduationCap} className="h-6 w-6" />
+              <div className="mr-3">
+                <Image
+                  src="/logo.png"
+                  alt="BEN Logo"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 rounded-full"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-heading font-bold">BEN</h3>
@@ -49,7 +56,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Empowering students to achieve O & A Level excellence through expert guidance and innovative teaching methods.
+              Empowering students from playgroup to matric, O/A Level, intermediate, English language courses, entry test preparation, and medical courses through expert guidance and innovative teaching methods. Available both online and on-campus.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -81,14 +88,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-primary-red mr-3" />
-                <a href="tel:+923001234567" className="text-gray-400 hover:text-white transition-colors">
-                  +92 300 1234567
+                <a href="tel:+923708382215" className="text-gray-400 hover:text-white transition-colors">
+                  +92 37 08382215
                 </a>
               </div>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 text-primary-red mr-3" />
-                <a href="mailto:info@ben-multan.com" className="text-gray-400 hover:text-white transition-colors">
-                  info@ben-multan.com
+                <a href="mailto:benmultan@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                  benmultan@gmail.com
                 </a>
               </div>
             </div>
@@ -124,8 +131,7 @@ const Footer = () => {
                 <span className="text-sm font-semibold">Office Hours</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Mon - Sat: 9:00 AM - 8:00 PM<br />
-                Sunday: Closed
+                Mon - Sat: 10:00 AM - 6:00 PM
               </p>
             </div>
 

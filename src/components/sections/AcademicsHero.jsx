@@ -46,7 +46,7 @@ const AcademicsHero = () => {
                 <div className="text-sm text-red-200">A & A* Results</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold mb-1">500+</div>
+                <div className="text-2xl font-bold mb-1">100+</div>
                 <div className="text-sm text-red-200">Students Taught</div>
               </div>
             </div>

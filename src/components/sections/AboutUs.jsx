@@ -1,23 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faGraduationCap, faGlobe, faAward } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faGraduationCap, faAward } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUs = () => {
   const stats = [
     {
       icon: faUsers,
-      number: '500+',
+      number: '100+',
       label: 'Students Enrolled'
     },
     {
       icon: faGraduationCap,
       number: '90%+',
       label: 'A & A* Results'
-    },
-    {
-      icon: faGlobe,
-      number: '15+',
-      label: 'Countries Served'
     },
     {
       icon: faAward,
@@ -37,29 +32,15 @@ const AboutUs = () => {
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              British Educational Network (BEN) is Multan's premier coaching center for 
-              O & A Level students, offering comprehensive academic support both on-campus and online. 
-              Our structured programs and experienced faculty guarantee results.
+              British Educational Network (BEN) is Multan's premier O & A Level coaching center, offering comprehensive academic support both on-campus and online. Our experienced faculty and structured programs guarantee results for Cambridge and Edexcel examinations.
             </p>
             
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Our team of highly qualified instructors brings years of experience in 
-              teaching Cambridge and Edexcel curricula, ensuring students receive the 
-              best preparation for their examinations. We combine traditional teaching 
-              methods with modern educational technology to create an engaging and 
-              effective learning environment.
-            </p>
-
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Whether you prefer in-person classes at our state-of-the-art campus in 
-              Multan or the convenience of online learning from anywhere, BEN's 
-              commitment to academic excellence remains unwavering. We understand the 
-              importance of education and are dedicated to helping our students achieve 
-              their highest standards of education.
+              Whether you choose our state-of-the-art campus in Multan or convenient online learning, BEN combines traditional teaching methods with modern technology to help students achieve their highest academic standards.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-primary-red text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -74,13 +55,12 @@ const AboutUs = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              {/* Placeholder for classroom image */}
-              <div className="text-gray-500 text-center">
-                <FontAwesomeIcon icon={faUsers} className="text-6xl mb-4" />
-                <p className="text-lg font-semibold">Classroom Image</p>
-                <p className="text-sm">Students in BEN classroom</p>
-              </div>
+            <div className="rounded-lg h-96 overflow-hidden">
+              <img 
+                src="/images/classroom/classroom.jpeg" 
+                alt="Students in BEN classroom" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Decorative elements */}

@@ -1,77 +1,62 @@
 export const oLevelSubjects = [
   {
     id: 1,
-    name: 'Mathematics',
-    icon: 'calculator',
-    description: 'Complete O Level Mathematics with concept clarity and exam techniques'
+    name: 'Business Studies',
+    icon: 'briefcase',
+    description: 'Business concepts, management and entrepreneurship fundamentals'
   },
   {
     id: 2,
-    name: 'Physics',
-    icon: 'atom',
-    description: 'Physics fundamentals with practical applications and problem solving'
+    name: 'Economics',
+    icon: 'chart-line',
+    description: 'Basic economic principles and real world applications'
   },
   {
     id: 3,
-    name: 'Chemistry',
-    icon: 'flask',
-    description: 'Comprehensive Chemistry covering all topics with lab work'
-  },
-  {
-    id: 4,
-    name: 'Biology',
-    icon: 'dna',
-    description: 'Biology concepts with detailed diagrams and exam preparation'
-  },
-  {
-    id: 5,
-    name: 'English',
-    icon: 'book-open',
-    description: 'English Language skills with writing and comprehension focus'
-  },
-  {
-    id: 6,
-    name: 'Computer Science',
-    icon: 'laptop-code',
-    description: 'Programming and computer concepts with practical coding'
+    name: 'Sociology',
+    icon: 'users',
+    description: 'Social behavior, culture and society analysis'
   }
 ];
 
 export const aLevelSubjects = [
   {
     id: 1,
-    name: 'Mathematics',
-    icon: 'calculator',
-    description: 'Pure & Applied Mathematics with advanced problem solving'
+    name: 'Business Studies',
+    icon: 'briefcase',
+    description: 'Advanced business concepts, strategic management and leadership'
   },
   {
     id: 2,
-    name: 'Physics',
-    icon: 'atom',
-    description: 'Advanced Physics concepts with mathematical applications'
+    name: 'Economics',
+    icon: 'chart-line',
+    description: 'Micro and Macro Economics with mathematical applications'
   },
   {
     id: 3,
-    name: 'Chemistry',
-    icon: 'flask',
-    description: 'Organic, Inorganic and Physical Chemistry in depth'
-  },
+    name: 'Sociology',
+    icon: 'users',
+    description: 'Advanced social theory, research methods and critical analysis'
+  }
+];
+
+export const combinedSubjects = [
   {
-    id: 4,
-    name: 'Economics',
-    icon: 'chart-line',
-    description: 'Micro and Macro Economics with real world applications'
-  },
-  {
-    id: 5,
+    id: 1,
     name: 'Business Studies',
     icon: 'briefcase',
-    description: 'Business concepts, management and entrepreneurship'
+    description: 'Complete O & A Level Business Studies with comprehensive coverage'
   },
   {
-    id: 6,
-    name: 'Accounting',
-    icon: 'receipt',
-    description: 'Financial and Management Accounting with practical examples'
+    id: 2,
+    name: 'Economics',
+    icon: 'chart-line',
+    description: 'Integrated O & A Level Economics program with practical applications'
+  },
+  {
+    id: 3,
+    name: 'Sociology',
+    icon: 'users',
+    description: 'Combined O & A Level Sociology with research and analysis skills'
   }
 ]; 

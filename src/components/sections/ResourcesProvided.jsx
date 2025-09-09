@@ -104,7 +104,7 @@ const ResourcesProvided = () => {
             </div>
             
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary-red mb-2">500+</div>
+              <div className="text-2xl font-bold text-primary-red mb-2">100+</div>
               <div className="text-sm text-gray-600">Past Papers</div>
             </div>
             

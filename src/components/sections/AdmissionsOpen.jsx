@@ -28,7 +28,7 @@ const AdmissionsOpen = () => {
               href={whatsappUrl}
               variant="outline"
               size="lg"
-              className="bg-white text-primary-red border-white hover:bg-red-50 w-full sm:w-auto"
+              className="bg-red-900 text-white border-2 border-red-900 hover:bg-red-800 hover:border-red-800 shadow-lg font-bold text-lg px-8 py-4 w-full sm:w-auto"
             >
               Enroll Now
             </Button>
