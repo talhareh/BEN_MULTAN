@@ -15,7 +15,6 @@ import {
   faStar,
   faTrophy,
   faBookOpen,
-  faBrain,
   faChartLine,
   faAward
 } from '@fortawesome/free-solid-svg-icons';
@@ -212,7 +211,7 @@ export default function EntryTestDepartment() {
               </h3>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {testPrograms.map((program, index) => (
+                {testPrograms.map((program) => (
                   <div key={program.id} className="text-center relative">
                     <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <FontAwesomeIcon icon={program.icon} className="text-2xl" />
@@ -232,7 +231,7 @@ export default function EntryTestDepartment() {
 
           {/* Detailed Program Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {testPrograms.map((program, index) => (
+            {testPrograms.map((program) => (
               <div key={program.id} className={`${program.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}>
                 <div className="flex items-start mb-6">
                   <div className={`${program.iconBg} w-16 h-16 rounded-xl flex items-center justify-center mr-4 flex-shrink-0`}>
@@ -253,7 +252,7 @@ export default function EntryTestDepartment() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-neutral-dark mb-3">What You'll Learn:</h4>
+                  <h4 className="font-semibold text-neutral-dark mb-3">What You&apos;ll Learn:</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {program.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start">
@@ -451,8 +450,8 @@ export default function EntryTestDepartment() {
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
             Ready to Ace Your Entry Test?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Join hundreds of successful students who have achieved their dreams with BEN's entry test preparation. 
+            <p className="text-xl text-red-100 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Join hundreds of successful students who have achieved their dreams with BEN&apos;s entry test preparation. 
             Start your journey to success today.
           </p>
           
