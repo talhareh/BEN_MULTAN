@@ -1,4 +1,5 @@
 import Header from '../components/layout/Header';
+import NotificationSlideBar from '../components/ui/NotificationSlideBar';
 import Hero from '../components/sections/Hero';
 import AboutUs from '../components/sections/AboutUs';
 import SubjectsOffered from '../components/sections/SubjectsOffered';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
+      <NotificationSlideBar />
       <Hero />
       <AboutUs />
       <SubjectsOffered />

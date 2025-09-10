@@ -6,7 +6,7 @@ const Hero = () => {
   const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-24 pb-8">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-8">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -38,7 +38,7 @@ const Hero = () => {
             href={whatsappUrl}
             variant="primary" 
             size="lg"
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700"
           >
             Enroll Now
           </Button>

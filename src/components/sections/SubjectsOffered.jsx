@@ -29,11 +29,11 @@ const SubjectsOffered = () => {
         </div>
 
           {/* BEN Departments Grid - 4 White Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
             {/* Tuition Department */}
-            <a href="/tuition-department" className="block">
-              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
+            <a href="/tuition-department" className="block h-full">
+              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <div className="flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6 mx-auto">
                   <FontAwesomeIcon icon={faUsers} className="text-white text-3xl" />
                 </div>
                 <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
@@ -46,43 +46,49 @@ const SubjectsOffered = () => {
             </a>
             
             {/* English Language Department */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
-                <FontAwesomeIcon icon={faBookOpen} className="text-white text-3xl" />
+            <a href="/english-department" className="block h-full">
+              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <div className="flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6 mx-auto">
+                  <FontAwesomeIcon icon={faBookOpen} className="text-white text-3xl" />
+                </div>
+                <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                  English Department
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Advanced English language skills, literature, and communication excellence for global opportunities.
+                </p>
               </div>
-              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
-                English Language
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Advanced English language skills, literature, and communication excellence for global opportunities.
-              </p>
-            </div>
+            </a>
 
             {/* Entry Test Department */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
-                <FontAwesomeIcon icon={faChartLine} className="text-white text-3xl" />
+            <a href="/entry-test-department" className="block h-full">
+              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <div className="flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6 mx-auto">
+                  <FontAwesomeIcon icon={faChartLine} className="text-white text-3xl" />
+                </div>
+                <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                  Entry Test Department
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Specialized coaching for university entrance exams and competitive tests with proven success rates.
+                </p>
               </div>
-              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
-                Entry Test Department
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Specialized coaching for university entrance exams and competitive tests with proven success rates.
-              </p>
-          </div>
+            </a>
 
             {/* Medical Courses */}
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6">
-                <FontAwesomeIcon icon={faFlask} className="text-white text-3xl" />
+            <a href="/medical-department" className="block h-full">
+              <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <div className="flex items-center justify-center w-20 h-20 bg-primary-red rounded-xl mb-6 mx-auto">
+                  <FontAwesomeIcon icon={faFlask} className="text-white text-3xl" />
+                </div>
+                <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
+                  Medical Courses
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  Pre-medical and medical entrance preparation with biology and chemistry focus for medical careers.
+                </p>
               </div>
-              <h3 className="text-xl font-heading font-bold text-neutral-dark mb-4">
-                Medical Courses
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                Pre-medical and medical entrance preparation with biology and chemistry focus for medical careers.
-              </p>
-            </div>
+            </a>
           </div>
         </div>
 
