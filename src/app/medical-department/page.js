@@ -6,27 +6,16 @@ import {
   faStethoscope, 
   faHeartbeat, 
   faUserMd, 
-  faSyringe,
-  faHospital,
   faUsers,
-  faClock,
   faLaptop,
   faMapMarkerAlt,
   faCheckCircle,
-  faStar,
   faTrophy,
-  faBookOpen,
-  faBrain,
   faChartLine,
   faAward,
   faCertificate,
-  faFlask,
-  faMicroscope,
-  faShieldAlt,
   faHandsHelping,
-  faEye,
-  faMagic,
-  faSprayCan
+  faMagic
 } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/ui/Button';
 
@@ -223,7 +212,7 @@ export default function MedicalDepartment() {
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {medicalCourses.map((course, index) => (
+                {medicalCourses.map((course) => (
                   <div key={course.id} className="text-center relative">
                     <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <FontAwesomeIcon icon={course.icon} className="text-2xl" />
@@ -245,7 +234,7 @@ export default function MedicalDepartment() {
 
           {/* Detailed Course Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {medicalCourses.map((course, index) => (
+            {medicalCourses.map((course) => (
               <div key={course.id} className={`${course.bgColor} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}>
                 <div className="flex items-start mb-6">
                   <div className={`${course.iconBg} w-16 h-16 rounded-xl flex items-center justify-center mr-4 flex-shrink-0`}>
@@ -268,7 +257,7 @@ export default function MedicalDepartment() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-neutral-dark mb-3">What You'll Learn:</h4>
+                  <h4 className="font-semibold text-neutral-dark mb-3">What You&apos;ll Learn:</h4>
                   <div className="space-y-2">
                     {course.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start">
@@ -475,8 +464,8 @@ export default function MedicalDepartment() {
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
             Ready to Advance Your Medical Career?
           </h2>
-          <p className="text-xl text-red-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Join hundreds of healthcare professionals who have enhanced their skills with BEN's medical training programs. 
+            <p className="text-xl text-red-100 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Join hundreds of healthcare professionals who have enhanced their skills with BEN&apos;s medical training programs. 
             Start your journey to medical excellence today.
           </p>
           
