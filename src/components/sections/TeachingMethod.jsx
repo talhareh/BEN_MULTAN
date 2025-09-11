@@ -68,12 +68,7 @@ const TeachingMethod = () => {
             What Makes Our Teaching Effective
           </h4>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary-red mb-2">1:10</div>
-              <div className="text-sm text-gray-600">Teacher to Student Ratio</div>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-2xl font-bold text-primary-red mb-2">24/7</div>
               <div className="text-sm text-gray-600">Doubt Clearing Support</div>

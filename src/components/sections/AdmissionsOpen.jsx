@@ -4,7 +4,7 @@ import { faBullhorn, faCalendarAlt, faUsers, faWhatsapp } from '@fortawesome/fre
 import Button from '../ui/Button';
 
 const AdmissionsOpen = () => {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in enrolling for the new O/A Level batches at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in enrolling for the new O/A Level batches at British Educational Network (BEN).`;
 
   return (
     <section className="py-16 bg-primary-red text-white relative overflow-hidden">

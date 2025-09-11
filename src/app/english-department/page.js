@@ -10,13 +10,12 @@ import {
   faClock,
   faLaptop,
   faMapMarkerAlt,
-  faCheckCircle,
-  faStar
+  faCheckCircle
 } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/ui/Button';
 
 export default function EnglishDepartment() {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in English language courses at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in English language courses at British Educational Network (BEN).`;
 
   const courseFeatures = [
     {
@@ -73,24 +72,24 @@ export default function EnglishDepartment() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
+      <section className="pt-40 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-8">
               English Department
             </h1>
             <p className="text-xl text-red-100 max-w-3xl mx-auto">
               Master English language skills with our comprehensive programs. 
               Available both online and on-campus for your convenience.
             </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="flex items-center justify-center bg-white bg-opacity-20 rounded-lg px-4 py-2">
-                <FontAwesomeIcon icon={faLaptop} className="mr-2" />
-                <span>Online Classes</span>
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex items-center justify-center bg-primary-gold rounded-lg px-4 py-2">
+                <FontAwesomeIcon icon={faLaptop} className="mr-2 text-red-900" />
+                <span className="text-red-900">Online Classes</span>
               </div>
-              <div className="flex items-center justify-center bg-white bg-opacity-20 rounded-lg px-4 py-2">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-                <span>Physical Classes</span>
+              <div className="flex items-center justify-center bg-primary-gold rounded-lg px-4 py-2">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-900" />
+                <span className="text-red-900">Physical Classes</span>
               </div>
             </div>
           </div>
@@ -101,7 +100,7 @@ export default function EnglishDepartment() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-dark mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-black mb-4">
               Our English Language Programs
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -121,19 +120,16 @@ export default function EnglishDepartment() {
                 {/* Spoken English */}
                 <div className="text-center">
                   <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FontAwesomeIcon icon={faMicrophone} className="text-2xl" />
+                    <FontAwesomeIcon icon={faMicrophone} className="text-2xl text-primary-gold" />
                   </div>
                   <h4 className="text-xl font-semibold mb-2">Spoken English</h4>
-                  <div className="flex justify-center mb-2">
-                    <FontAwesomeIcon icon={faStar} className="text-yellow-400" />
-                  </div>
                   <p className="text-red-100 text-sm">Conversation & Communication</p>
                 </div>
 
                 {/* IELTS */}
                 <div className="text-center">
                   <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FontAwesomeIcon icon={faGlobe} className="text-2xl" />
+                    <FontAwesomeIcon icon={faGlobe} className="text-2xl text-primary-gold" />
                   </div>
                   <h4 className="text-xl font-semibold mb-2">IELTS</h4>
                   <p className="text-red-100 text-sm">International English Testing</p>
@@ -142,7 +138,7 @@ export default function EnglishDepartment() {
                 {/* PTE */}
                 <div className="text-center">
                   <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FontAwesomeIcon icon={faCertificate} className="text-2xl" />
+                    <FontAwesomeIcon icon={faCertificate} className="text-2xl text-primary-gold" />
                   </div>
                   <h4 className="text-xl font-semibold mb-2">PTE</h4>
                   <p className="text-red-100 text-sm">Pearson Test of English</p>
@@ -154,23 +150,20 @@ export default function EnglishDepartment() {
           {/* Course Details */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Spoken English */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red">
+            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red flex flex-col">
               <div className="text-center mb-6">
                 <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FontAwesomeIcon icon={faMicrophone} className="text-primary-red text-2xl" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-neutral-dark mb-2">
+                <h3 className="text-2xl font-heading font-bold text-black mb-2">
                   Spoken English
                 </h3>
-                <div className="flex justify-center mb-2">
-                  <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-                </div>
                 <p className="text-gray-600">
                   Build confidence in English conversation and communication
                 </p>
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-6 flex-grow">
                 {spokenEnglishFeatures.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1 mr-3 flex-shrink-0" />
@@ -179,7 +172,7 @@ export default function EnglishDepartment() {
                 ))}
               </ul>
 
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <Button
                   href={whatsappUrl}
                   variant="primary"
@@ -192,12 +185,12 @@ export default function EnglishDepartment() {
             </div>
 
             {/* IELTS */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red">
+            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red flex flex-col">
               <div className="text-center mb-6">
                 <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FontAwesomeIcon icon={faGlobe} className="text-primary-red text-2xl" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-neutral-dark mb-2">
+                <h3 className="text-2xl font-heading font-bold text-black mb-2">
                   IELTS Preparation
                 </h3>
                 <p className="text-gray-600">
@@ -205,7 +198,7 @@ export default function EnglishDepartment() {
                 </p>
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-6 flex-grow">
                 {ieltsFeatures.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1 mr-3 flex-shrink-0" />
@@ -214,7 +207,7 @@ export default function EnglishDepartment() {
                 ))}
               </ul>
 
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <Button
                   href={whatsappUrl}
                   variant="primary"
@@ -227,12 +220,12 @@ export default function EnglishDepartment() {
             </div>
 
             {/* PTE */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red">
+            <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-primary-red flex flex-col">
               <div className="text-center mb-6">
                 <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FontAwesomeIcon icon={faCertificate} className="text-primary-red text-2xl" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-neutral-dark mb-2">
+                <h3 className="text-2xl font-heading font-bold text-black mb-2">
                   PTE Preparation
                 </h3>
                 <p className="text-gray-600">
@@ -240,7 +233,7 @@ export default function EnglishDepartment() {
                 </p>
               </div>
               
-              <ul className="space-y-3 mb-6">
+              <ul className="space-y-3 mb-6 flex-grow">
                 {pteFeatures.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1 mr-3 flex-shrink-0" />
@@ -249,7 +242,7 @@ export default function EnglishDepartment() {
                 ))}
               </ul>
 
-              <div className="text-center">
+              <div className="text-center mt-auto">
                 <Button
                   href={whatsappUrl}
                   variant="primary"
@@ -336,9 +329,9 @@ export default function EnglishDepartment() {
               </ul>
               <Button
                 href={whatsappUrl}
-                variant="outline"
+                variant="primary"
                 size="md"
-                className="w-full border-primary-red text-primary-red hover:bg-primary-red hover:text-white"
+                className="w-full"
               >
                 Join Online Classes
               </Button>
@@ -372,9 +365,9 @@ export default function EnglishDepartment() {
               </ul>
               <Button
                 href={whatsappUrl}
-                variant="outline"
+                variant="primary"
                 size="md"
-                className="w-full border-primary-red text-primary-red hover:bg-primary-red hover:text-white"
+                className="w-full"
               >
                 Visit Our Campus
               </Button>
@@ -404,7 +397,7 @@ export default function EnglishDepartment() {
               Get Course Information
             </Button>
             <Button
-              href="tel:+923001234567"
+              href="tel:+923708382215"
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary-red"

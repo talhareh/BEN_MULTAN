@@ -10,27 +10,27 @@ const ContactInfo = () => {
     {
       icon: faPhone,
       title: 'Phone',
-      primary: '+92 300 1234567',
-      secondary: 'Mon - Sat: 9:00 AM - 8:00 PM',
-      action: 'tel:+923001234567',
+      primary: '+92 370 8382215',
+      secondary: 'Sat 10:00 AM-6:00 PM',
+      action: 'tel:+923708382215',
       actionText: 'Call Now',
       color: 'bg-blue-100 text-blue-600'
     },
     {
       icon: faEnvelope,
       title: 'Email',
-      primary: 'info@ben-multan.com',
+      primary: 'benmultan@gmail.com',
       secondary: 'We reply within 24 hours',
-      action: 'mailto:info@ben-multan.com',
+      action: 'mailto:benmultan@gmail.com',
       actionText: 'Send Email',
       color: 'bg-purple-100 text-purple-600'
     },
     {
       icon: faWhatsapp,
       title: 'WhatsApp',
-      primary: '+92 300 1234567',
+      primary: '+92 370 8382215',
       secondary: '24/7 Instant Support',
-      action: 'https://wa.me/+923001234567?text=Hello! I need information about BEN.',
+      action: 'https://wa.me/+923708382215?text=Hello! I need information about BEN.',
       actionText: 'Chat Now',
       color: 'bg-green-100 text-green-600'
     }
@@ -146,13 +146,9 @@ const ContactInfo = () => {
                 ))}
               </div>
               
-              <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="grid grid-cols-2 gap-4 text-center">
                 <div>
-                  <div className="text-lg font-bold text-primary-red">1K+</div>
-                  <div className="text-xs text-gray-600">Followers</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-primary-red">100+</div>
+                  <div className="text-lg font-bold text-primary-red">10+</div>
                   <div className="text-xs text-gray-600">Posts</div>
                 </div>
                 <div>
@@ -174,7 +170,7 @@ const ContactInfo = () => {
               For urgent queries or immediate assistance, WhatsApp is the fastest way to reach us.
             </p>
             <Button
-              href="https://wa.me/+923001234567?text=Hello! I need immediate assistance regarding BEN."
+              href="https://wa.me/+923708382215?text=Hello! I need immediate assistance regarding BEN."
               variant="primary"
               size="lg"
               className="bg-green-500 hover:bg-green-600"
