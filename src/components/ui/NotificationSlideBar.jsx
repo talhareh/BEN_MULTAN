@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faBell, faExclamationTriangle, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 const NotificationSlideBar = ({ 
-  message = "🎓 New Admissions Open! Limited seats available for O & A Level classes. Enroll now!",
+  message = "New Admissions Open! Limited seats available for O & A Level classes. Enroll now!",
   type = "admission", // admission, alert, info
   actionText = "Enroll Now",
   actionUrl = "/contact",
@@ -90,7 +90,7 @@ const NotificationSlideBar = ({
     >
       <div className={`${config.bgClass} text-white shadow-lg border-b ${config.borderClass}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between py-3">
+          <div className="flex items-center justify-between py-0">
             {/* Left side - Icon and message */}
             <div className="flex items-center space-x-3 flex-1 min-w-0">
               <div className="flex-shrink-0">
@@ -99,24 +99,15 @@ const NotificationSlideBar = ({
                   className="h-5 w-5 text-primary-gold animate-pulse" 
                 />
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium">
+              <div className="flex-1 min-w-0 overflow-hidden">
+                <p className="text-base font-medium animate-marquee whitespace-nowrap">
                   {message}
                 </p>
               </div>
             </div>
 
-            {/* Right side - Action buttons */}
-            <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
-              {actionText && (
-                <button 
-                  onClick={handleAction}
-                  className="bg-primary-gold text-primary-red px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold hover:bg-yellow-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-gold focus:ring-offset-2 whitespace-nowrap"
-                >
-                  <span className="hidden sm:inline">{actionText}</span>
-                  <span className="sm:hidden">{actionText.split(' ')[0]}</span>
-                </button>
-              )}
+            {/* Right side - Close button */}
+            <div className="flex items-center flex-shrink-0">
               <button
                 onClick={handleClose}
                 className="text-white hover:text-primary-gold focus:outline-none focus:text-primary-gold transition-colors duration-200 p-1 flex-shrink-0"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faGraduationCap, faAward } from '@fortawesome/free-solid-svg-icons';
 import Card from '../ui/Card';
@@ -24,9 +25,14 @@ const FacultyGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {instructors.map((instructor) => (
             <Card key={instructor.id} hover={true} className="text-center h-full">
-              {/* Instructor Image Placeholder */}
-              <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FontAwesomeIcon icon={faUser} className="text-4xl text-gray-400" />
+              {/* Instructor Image */}
+              <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 relative">
+                <Image
+                  src={instructor.image}
+                  alt={`${instructor.name} - ${instructor.specialization}`}
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               {/* Instructor Info */}
@@ -55,7 +61,7 @@ const FacultyGrid = () => {
               </p>
               
               <Button
-                href={`https://wa.me/+923001234567?text=Hello! I'd like to book a demo class with ${instructor.name} at BEN.`}
+                href={`https://wa.me/+923708382215?text=Hello! I'd like to book a demo class with ${instructor.name} at BEN.`}
                 variant="secondary"
                 size="sm"
                 className="w-full"

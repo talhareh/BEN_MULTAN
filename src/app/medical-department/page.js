@@ -20,7 +20,7 @@ import {
 import Button from '../../components/ui/Button';
 
 export default function MedicalDepartment() {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in medical courses at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in medical courses at British Educational Network (BEN).`;
 
   const medicalCourses = [
     {
@@ -75,7 +75,7 @@ export default function MedicalDepartment() {
       iconBg: 'bg-pink-100',
       iconColor: 'text-pink-600',
       borderColor: 'border-pink-500',
-      formats: ['Online', 'Physical'],
+      formats: ['Physical Only'],
       features: [
         'Cosmetic dermatology basics',
         'Non-invasive procedures',
@@ -97,7 +97,7 @@ export default function MedicalDepartment() {
     },
     {
       icon: faUsers,
-      number: '300+',
+      number: '100+',
       label: 'Medical Professionals',
       color: 'text-blue-500'
     },
@@ -120,14 +120,9 @@ export default function MedicalDepartment() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white relative overflow-hidden">
         {/* Medical Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-white bg-opacity-10 rounded-full animate-bounce"></div>
-          <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-white bg-opacity-10 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-40 right-1/3 w-20 h-20 bg-white bg-opacity-10 rounded-full animate-bounce"></div>
-          
           {/* Medical Icons Floating */}
           <div className="absolute top-1/3 left-1/4 opacity-20">
             <FontAwesomeIcon icon={faStethoscope} className="text-4xl animate-pulse" />
@@ -145,7 +140,7 @@ export default function MedicalDepartment() {
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
               Medical Department
             </h1>
-            <p className="text-xl md:text-2xl text-red-100 max-w-4xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-red-100 max-w-4xl mx-auto mb-8 leading-relaxed">
               Advance your medical career with our 
               <span className="text-yellow-300 font-semibold"> specialized medical programs</span>. 
               Professional training for healthcare excellence.
@@ -156,15 +151,15 @@ export default function MedicalDepartment() {
               <Button
                 href={whatsappUrl}
                 variant="outline"
-                size="lg"
-                className="bg-white text-primary-red border-white hover:bg-red-50 font-bold transform hover:scale-105 transition-all duration-300"
+                size="md"
+                className="border-white text-white hover:bg-white hover:text-primary-red font-bold transform hover:scale-105 transition-all duration-300"
               >
                 Get Medical Consultation
               </Button>
               <Button
                 href="#courses"
                 variant="outline"
-                size="lg"
+                size="md"
                 className="border-white text-white hover:bg-white hover:text-primary-red font-bold transform hover:scale-105 transition-all duration-300"
               >
                 View Medical Courses
@@ -215,13 +210,13 @@ export default function MedicalDepartment() {
                 {medicalCourses.map((course) => (
                   <div key={course.id} className="text-center relative">
                     <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FontAwesomeIcon icon={course.icon} className="text-2xl" />
+                      <FontAwesomeIcon icon={course.icon} className="text-2xl text-primary-red" />
                     </div>
                     <h4 className="text-lg font-semibold mb-2">{course.name}</h4>
                     <p className="text-red-100 text-xs leading-tight mb-2">{course.fullName}</p>
                     <div className="flex justify-center gap-2">
                       {course.formats.map((format, formatIndex) => (
-                        <span key={formatIndex} className="bg-white bg-opacity-20 text-xs px-2 py-1 rounded">
+                        <span key={formatIndex} className="bg-white bg-opacity-20 text-xs px-2 py-1 rounded text-primary-red">
                           {format}
                         </span>
                       ))}
@@ -281,7 +276,7 @@ export default function MedicalDepartment() {
                     href="#contact"
                     variant="outline"
                     size="md"
-                    className={`w-full ${course.borderColor} ${course.iconColor} hover:bg-opacity-10`}
+                    className="w-full border-red-900 text-red-900 hover:bg-red-900 hover:text-white focus:text-red-900 active:text-red-900"
                   >
                     Get Course Details
                   </Button>
@@ -391,9 +386,9 @@ export default function MedicalDepartment() {
               
               <Button
                 href={whatsappUrl}
-                variant="outline"
+                variant="primary"
                 size="md"
-                className="w-full border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
+                className="w-full bg-blue-500 text-white border-blue-500 hover:bg-blue-600 hover:text-white"
               >
                 Start Online Learning
               </Button>
@@ -432,9 +427,9 @@ export default function MedicalDepartment() {
               
               <Button
                 href={whatsappUrl}
-                variant="outline"
+                variant="primary"
                 size="md"
-                className="w-full border-primary-red text-primary-red hover:bg-primary-red hover:text-white"
+                className="w-full bg-primary-red text-white border-primary-red hover:bg-red-700 hover:text-white"
               >
                 Visit Medical Campus
               </Button>
@@ -447,9 +442,6 @@ export default function MedicalDepartment() {
       <section id="contact" className="py-16 bg-gradient-to-r from-primary-red via-red-600 to-red-800 text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 right-10 w-40 h-40 bg-white bg-opacity-10 rounded-full"></div>
-            <div className="absolute bottom-10 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full"></div>
-            
             {/* Medical Icons */}
             <div className="absolute top-1/4 left-1/4 opacity-20">
               <FontAwesomeIcon icon={faStethoscope} className="text-5xl animate-pulse" />
@@ -473,16 +465,16 @@ export default function MedicalDepartment() {
             <Button
               href={whatsappUrl}
               variant="outline"
-              size="lg"
-              className="bg-white text-primary-red border-white hover:bg-red-50 font-bold"
+              size="md"
+              className="border-white text-white hover:bg-white hover:text-red-900 focus:text-white active:text-white font-bold"
             >
               Get Medical Consultation
             </Button>
             <Button
-              href="tel:+923001234567"
+              href="tel:+923708382215"
               variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary-red font-bold"
+              size="md"
+              className="border-white text-white hover:bg-white hover:text-red-900 font-bold"
             >
               Call Medical Department
             </Button>

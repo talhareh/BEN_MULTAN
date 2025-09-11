@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
     {
       icon: faLaptop,
       title: 'Flexible Learning Options',
-      description: 'Choose between on-campus classes, online learning, or recorded sessions to fit your schedule and preferences.'
+      description: 'Choose between on-campus classes or online live sessions to fit your schedule and preferences.'
     },
     {
       icon: faFileText,
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-green-500">✓</span>
-              <span>Flexible learning: On-campus + Online + Recorded sessions</span>
+              <span>Flexible learning: On-campus + Online live sessions</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-green-500">✓</span>

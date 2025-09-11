@@ -16,7 +16,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
 
   const quickLinks = [
     { name: 'About Us', href: '#about' },

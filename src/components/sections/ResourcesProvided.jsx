@@ -60,26 +60,31 @@ const ResourcesProvided = () => {
         {/* Resources Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {resources.map((resource, index) => (
-            <Card key={index} hover={true} className="h-full">
-              <div className="bg-primary-red text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <FontAwesomeIcon icon={resource.icon} className="text-2xl" />
-              </div>
+            <Card key={index} hover={true} className="h-full text-center group relative overflow-hidden bg-gradient-to-br from-white to-gray-50 border-2 border-transparent hover:border-primary-red transition-all duration-300 hover:shadow-xl">
+              {/* Background Pattern */}
+              <div className="absolute top-0 right-0 w-20 h-20 bg-primary-red opacity-5 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500"></div>
               
-              <h3 className="text-xl font-heading font-semibold text-neutral-dark mb-3">
-                {resource.title}
-              </h3>
-              
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {resource.description}
-              </p>
-              
-              <div className="space-y-2">
-                {resource.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-start">
-                    <span className="w-2 h-2 bg-primary-gold rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span className="text-gray-600 text-sm">{feature}</span>
-                  </div>
-                ))}
+              <div className="relative z-10">
+                <div className="bg-gradient-to-br from-primary-red to-red-700 text-white w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <FontAwesomeIcon icon={resource.icon} className="text-2xl" />
+                </div>
+                
+                <h3 className="text-xl font-heading font-semibold text-neutral-dark mb-3 group-hover:text-primary-red transition-colors duration-300">
+                  {resource.title}
+                </h3>
+                
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {resource.description}
+                </p>
+                
+                <div className="space-y-3">
+                  {resource.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-start justify-center">
+                      <span className="w-2 h-2 bg-primary-gold rounded-full mr-3 mt-2 flex-shrink-0 group-hover:bg-primary-red transition-colors duration-300"></span>
+                      <span className="text-gray-600 text-sm text-left">{feature}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </Card>
           ))}
@@ -97,12 +102,7 @@ const ResourcesProvided = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary-red mb-2">1000+</div>
-              <div className="text-sm text-gray-600">Study Resources</div>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-2xl font-bold text-primary-red mb-2">100+</div>
               <div className="text-sm text-gray-600">Past Papers</div>

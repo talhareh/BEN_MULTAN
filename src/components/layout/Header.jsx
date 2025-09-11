@@ -9,7 +9,7 @@ import Button from '../ui/Button';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
 
   const navItems = [
     { name: 'Home', href: '/', current: false },
@@ -31,7 +31,7 @@ const Header = () => {
                   alt="BEN Logo"
                   width={40}
                   height={40}
-                  className="w-10 h-10"
+                  className="w-10 h-10 rounded-full"
                   priority
                 />
               </div>

@@ -12,7 +12,6 @@ import {
   faLaptop,
   faMapMarkerAlt,
   faCheckCircle,
-  faStar,
   faTrophy,
   faBookOpen,
   faChartLine,
@@ -21,7 +20,7 @@ import {
 import Button from '../../components/ui/Button';
 
 export default function EntryTestDepartment() {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in entry test preparation at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in entry test preparation at British Educational Network (BEN).`;
 
   const testPrograms = [
     {
@@ -115,7 +114,7 @@ export default function EntryTestDepartment() {
     },
     {
       icon: faUsers,
-      number: '500+',
+      number: '100+',
       label: 'Students Trained',
       color: 'text-blue-500'
     },
@@ -138,13 +137,13 @@ export default function EntryTestDepartment() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
               Entry Test Department
             </h1>
-            <p className="text-xl md:text-2xl text-red-100 max-w-4xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-red-100 max-w-4xl mx-auto mb-8 leading-relaxed">
               Master your entrance exams with our 
               <span className="text-yellow-300 font-semibold"> specialized preparation programs</span>. 
               Available both online and on-campus for your convenience.
@@ -155,15 +154,15 @@ export default function EntryTestDepartment() {
               <Button
                 href={whatsappUrl}
                 variant="outline"
-                size="lg"
-                className="bg-white text-primary-red border-white hover:bg-red-50 font-bold transform hover:scale-105 transition-all duration-300"
+                size="md"
+                className="border-white text-white hover:bg-white hover:text-primary-red font-bold transform hover:scale-105 transition-all duration-300"
               >
                 Get Free Consultation
               </Button>
               <Button
                 href="#programs"
                 variant="outline"
-                size="lg"
+                size="md"
                 className="border-white text-white hover:bg-white hover:text-primary-red font-bold transform hover:scale-105 transition-all duration-300"
               >
                 View Programs
@@ -214,14 +213,9 @@ export default function EntryTestDepartment() {
                 {testPrograms.map((program) => (
                   <div key={program.id} className="text-center relative">
                     <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FontAwesomeIcon icon={program.icon} className="text-2xl" />
+                      <FontAwesomeIcon icon={program.icon} className="text-2xl text-primary-red" />
                     </div>
                     <h4 className="text-lg font-semibold mb-2">{program.name}</h4>
-                    {program.id === 'mdcat' && (
-                      <div className="absolute -top-2 -left-2">
-                        <FontAwesomeIcon icon={faStar} className="text-yellow-400 text-xl" />
-                      </div>
-                    )}
                     <p className="text-red-100 text-xs leading-tight">{program.fullName}</p>
                   </div>
                 ))}
@@ -242,9 +236,6 @@ export default function EntryTestDepartment() {
                       <h3 className="text-2xl font-heading font-bold text-neutral-dark mr-2">
                         {program.name}
                       </h3>
-                      {program.id === 'mdcat' && (
-                        <FontAwesomeIcon icon={faStar} className="text-yellow-500" />
-                      )}
                     </div>
                     <p className="text-gray-600 text-sm mb-4">{program.fullName}</p>
                     <p className="text-gray-700 leading-relaxed">{program.description}</p>
@@ -276,7 +267,7 @@ export default function EntryTestDepartment() {
                     href="#contact"
                     variant="outline"
                     size="md"
-                    className={`flex-1 ${program.borderColor} ${program.iconColor} hover:bg-opacity-10`}
+                    className="flex-1 border-gray-400 text-red-900 hover:bg-gray-100 hover:text-red-900"
                   >
                     Get Details
                   </Button>
@@ -439,13 +430,6 @@ export default function EntryTestDepartment() {
 
       {/* Contact CTA */}
       <section id="contact" className="py-16 bg-gradient-to-r from-primary-red via-red-600 to-red-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 right-10 w-40 h-40 bg-white bg-opacity-10 rounded-full"></div>
-            <div className="absolute bottom-10 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full"></div>
-          </div>
-        </div>
-        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
             Ready to Ace Your Entry Test?
@@ -460,12 +444,12 @@ export default function EntryTestDepartment() {
               href={whatsappUrl}
               variant="outline"
               size="lg"
-              className="bg-white text-primary-red border-white hover:bg-red-50 font-bold"
+              className="border-white text-white hover:bg-white hover:text-primary-red font-bold"
             >
               Get Free Consultation
             </Button>
             <Button
-              href="tel:+923001234567"
+              href="tel:+923708382215"
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary-red font-bold"

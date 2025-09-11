@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Button from '../ui/Button';
 
 const Hero = () => {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'm interested in O/A Level coaching at British Educational Network (BEN).`;
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-8">
@@ -38,7 +38,7 @@ const Hero = () => {
             href={whatsappUrl}
             variant="primary" 
             size="lg"
-            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700"
+            className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white border-transparent hover:border-transparent focus:outline-none"
           >
             Enroll Now
           </Button>
@@ -53,21 +53,13 @@ const Hero = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-6 text-gray-300 -mb-16">
+        <div className="mt-8 text-gray-300 -mb-12">
           <p className="text-lg mb-0">
             ✨ Cambridge & Edexcel Certified • 90%+ A & A* Results • Online & On-Campus Classes
           </p>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="animate-bounce">
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

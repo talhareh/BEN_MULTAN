@@ -71,7 +71,7 @@ const OfficeLocation = () => {
                       Get Directions
                     </Button>
                     <Button
-                      href="https://wa.me/+923001234567?text=Hello! I'd like to visit your campus. Can you provide directions?"
+                      href="https://wa.me/+923708382215?text=Hello! I'd like to visit your campus. Can you provide directions?"
                       variant="secondary"
                       size="sm"
                     >
@@ -98,31 +98,31 @@ const OfficeLocation = () => {
             </div>
 
             {/* Visit Info */}
-            <Card className="mt-8 bg-primary-red text-white">
-              <h4 className="text-lg font-heading font-semibold mb-4">
+            <Card className="mt-8 bg-white border-2 border-primary-red">
+              <h4 className="text-lg font-heading font-semibold mb-4 text-neutral-dark">
                 Planning to Visit?
               </h4>
-              <div className="space-y-3 text-red-100">
+              <div className="space-y-3 text-gray-700">
                 <p className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-gold rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-primary-red rounded-full mr-3"></span>
                   Call ahead to schedule a campus tour
                 </p>
                 <p className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-gold rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-primary-red rounded-full mr-3"></span>
                   Meet with our academic counselors
                 </p>
                 <p className="flex items-center">
-                  <span className="w-2 h-2 bg-primary-gold rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-primary-red rounded-full mr-3"></span>
                   See our classrooms and facilities
                 </p>
               </div>
               
               <div className="mt-6">
                 <Button
-                  href="https://wa.me/+923001234567?text=Hello! I'd like to schedule a campus visit at BEN."
-                  variant="outline"
+                  href="https://wa.me/+923708382215?text=Hello! I'd like to schedule a campus visit at BEN."
+                  variant="primary"
                   size="sm"
-                  className="bg-white text-primary-red border-white hover:bg-red-50"
+                  className="w-full"
                 >
                   Schedule Visit
                 </Button>

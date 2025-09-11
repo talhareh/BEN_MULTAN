@@ -5,7 +5,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Button from '../ui/Button';
 
 const ContactHero = () => {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I have questions about admissions, class timings, and fees at British Educational Network (BEN).`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I have questions about admissions, class timings, and fees at British Educational Network (BEN).`;
 
   return (
     <section className="pt-20 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white relative overflow-hidden">
@@ -90,7 +90,7 @@ const ContactHero = () => {
                 WhatsApp Now
               </Button>
               <Button 
-                href="tel:+923001234567"
+                href="tel:+923708382215"
                 variant="outline"
                 size="lg"
               >
