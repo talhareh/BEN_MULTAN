@@ -8,13 +8,13 @@ export default function TuitionDepartment() {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-red to-red-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
               Tuition Department
             </h1>
-            <p className="text-xl text-red-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Comprehensive educational programs from playgroup to intermediate level, 
               covering all major boards and streams.
             </p>
@@ -26,10 +26,10 @@ export default function TuitionDepartment() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-dark mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-black mb-4">
               Our Educational Structure
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-black max-w-3xl mx-auto">
               We offer comprehensive educational programs across all levels, 
               from early childhood to intermediate studies.
             </p>
@@ -46,10 +46,10 @@ export default function TuitionDepartment() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Playgroup - Matric */}
                 <div className="bg-white bg-opacity-20 rounded-lg p-6">
-                  <h4 className="text-xl font-heading font-bold mb-4 text-center">
+                  <h4 className="text-xl font-heading font-bold mb-4 text-left text-red-900">
                     Playgroup - Matric
                   </h4>
-                  <div className="space-y-2 text-red-100">
+                  <div className="space-y-2 text-red-900 text-left">
                     <p>• Early Childhood Education</p>
                     <p>• Primary School Programs</p>
                     <p>• Middle School Studies</p>
@@ -59,14 +59,14 @@ export default function TuitionDepartment() {
 
                 {/* Intermediate */}
                 <div className="bg-white bg-opacity-20 rounded-lg p-6">
-                  <h4 className="text-xl font-heading font-bold mb-4 text-center">
+                  <h4 className="text-xl font-heading font-bold mb-4 text-left text-red-900">
                     Intermediate
                   </h4>
-                  <div className="space-y-2 text-red-100">
-                    <p>• FA (Faculty of Arts)</p>
+                  <div className="space-y-2 text-red-900 text-left">
+                    <p>• FSC (Medical & Engineering)</p>
                     <p>• ICS (Computer Science)</p>
                     <p>• ICOM (Commerce)</p>
-                    <p>• FSC (Faculty of Science)</p>
+                    <p>• FA (Faculty of Arts)</p>
                   </div>
                 </div>
               </div>
@@ -80,18 +80,18 @@ export default function TuitionDepartment() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-lg p-6 text-center shadow-md">
                   <h4 className="text-lg font-heading font-semibold text-primary-red mb-2">
-                    Federal Board
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    Federal Board of Intermediate and Secondary Education
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-md">
-                  <h4 className="text-lg font-heading font-semibold text-primary-red mb-2">
                     Punjab Board
                   </h4>
                   <p className="text-gray-600 text-sm">
                     Board of Intermediate and Secondary Education Punjab
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center shadow-md">
+                  <h4 className="text-lg font-heading font-semibold text-primary-red mb-2">
+                    Federal Board
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Federal Board of Intermediate and Secondary Education
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-6 text-center shadow-md">

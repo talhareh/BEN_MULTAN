@@ -92,17 +92,18 @@ const DemoClassBooking = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  href="https://wa.me/+923001234567?text=Hello! I'd like to book a free demo class at BEN. Please let me know the available slots."
+                  href="https://wa.me/+923708382215?text=Hello! I'd like to book a free demo class at BEN. Please let me know the available slots."
                   variant="outline"
                   size="lg"
-                  className="bg-white text-primary-red border-white hover:bg-red-50"
+                  className="bg-white !text-red-900 border-white hover:bg-red-50 hover:!text-red-900 font-semibold"
                 >
                   Book Demo Class
                 </Button>
                 <Button
-                  href="https://wa.me/+923001234567?text=Hello! I'd like to know more about your instructors and teaching methods at BEN."
+                  href="https://wa.me/+923708382215?text=Hello! I'd like to know more about your instructors and teaching methods at BEN."
                   variant="outline"
                   size="lg"
+                  className="bg-transparent text-white border-white hover:bg-white hover:text-primary-red font-semibold"
                 >
                   Learn More
                 </Button>
@@ -112,7 +113,7 @@ const DemoClassBooking = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">1000+</div>
+                <div className="text-3xl font-bold mb-2">100+</div>
                 <div className="text-red-200 text-sm">Demo Classes Conducted</div>
               </div>
               <div className="text-center">
@@ -137,7 +138,7 @@ const DemoClassBooking = () => {
             Have questions about our demo classes? We're here to help!
           </p>
           <Button
-            href="https://wa.me/+923001234567?text=Hello! I have some questions about the demo classes at BEN."
+            href="https://wa.me/+923708382215?text=Hello! I have some questions about the demo classes at BEN."
             variant="secondary"
             size="md"
           >

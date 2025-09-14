@@ -10,7 +10,7 @@ const ContactCTA = () => {
       icon: faWhatsapp,
       title: 'Book Free Trial Class',
       description: 'Experience our teaching quality before enrolling',
-      action: 'https://wa.me/+923001234567?text=Hello! I\'d like to book a free trial class at BEN.',
+      action: 'https://wa.me/+923708382215?text=Hello! I\'d like to book a free trial class at BEN.',
       buttonText: 'Book Trial Class',
       color: 'bg-green-500 hover:bg-green-600'
     },
@@ -18,7 +18,7 @@ const ContactCTA = () => {
       icon: faComments,
       title: 'Schedule a Counseling Session',
       description: 'Get personalized guidance for your academic journey',
-      action: 'https://wa.me/+923001234567?text=Hello! I\'d like to schedule a counseling session at BEN.',
+      action: 'https://wa.me/+923708382215?text=Hello! I\'d like to schedule a counseling session at BEN.',
       buttonText: 'Schedule Session',
       color: 'bg-blue-500 hover:bg-blue-600'
     }
@@ -80,7 +80,7 @@ const ContactCTA = () => {
               Get instant answers to your questions via WhatsApp messaging
             </p>
             <Button
-              href="https://wa.me/+923001234567?text=Hello! I need support from BEN."
+              href="https://wa.me/+923708382215?text=Hello! I need support from BEN."
               variant="secondary"
               size="sm"
             >
@@ -99,7 +99,7 @@ const ContactCTA = () => {
               Schedule a visit to our campus and meet our expert faculty
             </p>
             <Button
-              href="https://wa.me/+923001234567?text=Hello! I'd like to schedule a campus visit at BEN."
+              href="https://wa.me/+923708382215?text=Hello! I'd like to schedule a campus visit at BEN."
               variant="secondary"
               size="sm"
             >
@@ -118,7 +118,7 @@ const ContactCTA = () => {
               Get expert advice on subject selection and career guidance
             </p>
             <Button
-              href="https://wa.me/+923001234567?text=Hello! I need academic counseling at BEN."
+              href="https://wa.me/+923708382215?text=Hello! I need academic counseling at BEN."
               variant="secondary"
               size="sm"
             >
@@ -139,7 +139,7 @@ const ContactCTA = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              href="https://wa.me/+923001234567?text=Hello! I have some questions about BEN."
+              href="https://wa.me/+923708382215?text=Hello! I have some questions about BEN."
               variant="primary"
               size="lg"
               className="bg-green-500 hover:bg-green-600"
@@ -148,7 +148,7 @@ const ContactCTA = () => {
               Ask Your Question
             </Button>
             <Button
-              href="tel:+923001234567"
+              href="tel:+923708382215"
               variant="secondary"
               size="lg"
             >

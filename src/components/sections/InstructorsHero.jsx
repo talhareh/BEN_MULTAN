@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate, faAward, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Button from '../ui/Button';
 
 const InstructorsHero = () => {
-  const whatsappUrl = `https://wa.me/+923001234567?text=Hello! I'd like to meet your expert instructors and book a demo class at BEN.`;
+  const whatsappUrl = `https://wa.me/+923708382215?text=Hello! I'd like to meet your expert instructors and book a demo class at BEN.`;
 
   return (
     <section className="pt-20 pb-16 bg-gradient-to-br from-neutral-dark to-gray-900 text-white relative overflow-hidden">
@@ -38,20 +39,20 @@ const InstructorsHero = () => {
             {/* Key Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="bg-white bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faAward} className="text-primary-gold" />
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FontAwesomeIcon icon={faAward} className="text-red-600" />
                 </div>
                 <div className="text-sm text-gray-300">Subject Specialists</div>
               </div>
               <div className="text-center">
-                <div className="bg-white bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faGlobe} className="text-primary-gold" />
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FontAwesomeIcon icon={faGlobe} className="text-red-600" />
                 </div>
                 <div className="text-sm text-gray-300">International Experience</div>
               </div>
               <div className="text-center">
-                <div className="bg-white bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faUserGraduate} className="text-primary-gold" />
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <FontAwesomeIcon icon={faUserGraduate} className="text-red-600" />
                 </div>
                 <div className="text-sm text-gray-300">A & A* Results</div>
               </div>
@@ -66,7 +67,7 @@ const InstructorsHero = () => {
                 Meet Our Team
               </Button>
               <Button 
-                href="https://wa.me/+923001234567?text=Hello! I'd like to book a free demo class at BEN."
+                href="https://wa.me/+923708382215?text=Hello! I'd like to book a free demo class at BEN."
                 variant="outline"
                 size="lg"
               >
@@ -75,15 +76,19 @@ const InstructorsHero = () => {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Faculty Image */}
           <div className="relative">
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
-              <div className="bg-white bg-opacity-20 rounded-xl h-80 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <FontAwesomeIcon icon={faUserGraduate} className="text-6xl mb-4 opacity-60" />
-                  <p className="text-lg font-semibold">Faculty Team Photo</p>
-                  <p className="text-sm opacity-80">Expert Instructors</p>
-                </div>
+              <div className="relative rounded-xl h-80 overflow-hidden">
+                <Image
+                  src="/images/instructors/faculty-team.jpg"
+                  alt="Expert faculty team at BEN - professional instructors"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                {/* Overlay for better text readability */}
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
               </div>
             </div>
             

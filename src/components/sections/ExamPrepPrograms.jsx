@@ -59,9 +59,9 @@ const ExamPrepPrograms = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {programs.map((program, index) => (
-            <Card key={index} hover={true} className="h-full text-center">
+            <Card key={index} hover={true} className="h-full text-center flex flex-col">
               <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ${program.color}`}>
                 <FontAwesomeIcon icon={program.icon} className="text-2xl" />
               </div>
@@ -70,7 +70,7 @@ const ExamPrepPrograms = () => {
                 {program.title}
               </h3>
               
-              <div className="bg-primary-gold text-primary-red px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+              <div className="bg-primary-gold text-primary-red px-2 py-0.5 rounded-full text-sm font-medium mb-4 inline-block">
                 {program.duration}
               </div>
               
@@ -78,7 +78,7 @@ const ExamPrepPrograms = () => {
                 {program.description}
               </p>
               
-              <div className="space-y-3 mb-8 text-left">
+              <div className="space-y-3 mb-8 text-left flex-grow">
                 {program.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center">
                     <span className="w-2 h-2 bg-primary-red rounded-full mr-3"></span>
@@ -87,14 +87,16 @@ const ExamPrepPrograms = () => {
                 ))}
               </div>
               
-              <Button
-                href={`https://wa.me/+923001234567?text=Hello! I'm interested in ${program.title} at BEN.`}
-                variant="secondary"
-                size="sm"
-                className="w-full"
-              >
-                Enroll Now
-              </Button>
+              <div className="mt-auto">
+                <Button
+                  href={`https://wa.me/+923708382215?text=Hello! I'm interested in ${program.title} at BEN.`}
+                  variant="secondary"
+                  size="sm"
+                  className="w-full"
+                >
+                  Enroll Now
+                </Button>
+              </div>
             </Card>
           ))}
         </div>

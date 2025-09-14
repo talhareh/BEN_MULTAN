@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faLaptop, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faLaptop } from '@fortawesome/free-solid-svg-icons';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 
@@ -29,24 +29,10 @@ const ClassOptions = () => {
         'Global accessibility',
         'Digital whiteboards',
         'Screen sharing capabilities',
-        'Recorded for later review'
+        'Real-time doubt resolution'
       ],
       color: 'bg-green-100 text-green-600',
       whatsappText: 'Hello! I\'m interested in online live classes at BEN.'
-    },
-    {
-      icon: faVideo,
-      title: 'Recorded Lectures',
-      subtitle: 'Perfect for revision & flexible schedules',
-      features: [
-        'Learn at your own pace',
-        'Unlimited replay access',
-        'Flexible scheduling',
-        'Perfect for revision',
-        'Downloadable content'
-      ],
-      color: 'bg-purple-100 text-purple-600',
-      whatsappText: 'Hello! I\'m interested in recorded lecture packages at BEN.'
     }
   ];
 
@@ -65,7 +51,7 @@ const ClassOptions = () => {
         </div>
 
         {/* Class Types Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           {classTypes.map((classType, index) => (
             <Card key={index} hover={true} className="text-center h-full relative">
               <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 ${classType.color}`}>
@@ -91,7 +77,7 @@ const ClassOptions = () => {
               
               <div className="mt-auto">
                 <Button
-                  href={`https://wa.me/+923001234567?text=${encodeURIComponent(classType.whatsappText)}`}
+                  href={`https://wa.me/+923708382215?text=${encodeURIComponent(classType.whatsappText)}`}
                   variant="secondary"
                   size="sm"
                   className="w-full"
@@ -117,13 +103,13 @@ const ClassOptions = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">3</div>
+              <div className="text-3xl font-bold mb-2">2</div>
               <div className="text-red-200">Learning Formats</div>
             </div>
             
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-red-200">Access to Materials</div>
+              <div className="text-3xl font-bold mb-2">Live</div>
+              <div className="text-red-200">Interactive Sessions</div>
             </div>
             
             <div className="text-center">

@@ -9,7 +9,12 @@ import {
   faLaptopCode,
   faChartLine,
   faBriefcase,
-  faReceipt
+  faReceipt,
+  faGlobe,
+  faHistory,
+  faMosque,
+  faLanguage,
+  faUsers
 } from '@fortawesome/free-solid-svg-icons';
 import Card from '../ui/Card';
 import { oLevelSubjects, aLevelSubjects } from '../../data/subjects';
@@ -24,7 +29,12 @@ const SubjectsDetailed = () => {
     'laptop-code': faLaptopCode,
     'chart-line': faChartLine,
     briefcase: faBriefcase,
-    receipt: faReceipt
+    receipt: faReceipt,
+    globe: faGlobe,
+    history: faHistory,
+    mosque: faMosque,
+    language: faLanguage,
+    users: faUsers
   };
 
   const SubjectDetailCard = ({ subject, level }) => (
