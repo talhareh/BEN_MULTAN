@@ -12,7 +12,7 @@ const ContactCTA = () => {
       description: 'Experience our teaching quality before enrolling',
       action: 'https://wa.me/+923708382215?text=Hello! I\'d like to book a free trial class at BEN.',
       buttonText: 'Book Trial Class',
-      color: 'bg-green-500 hover:bg-green-600'
+      color: 'bg-black hover:bg-black'
     },
     {
       icon: faComments,
@@ -40,16 +40,16 @@ const ContactCTA = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {ctaOptions.map((option, index) => (
-                <div key={index} className="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
-                  <div className="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <FontAwesomeIcon icon={option.icon} className="text-2xl" />
+                <div key={index} className="bg-white rounded-xl p-6 shadow-2xl">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-primary-red/10">
+                    <FontAwesomeIcon icon={option.icon} className="text-2xl text-primary-red" />
                   </div>
                   
-                  <h3 className="text-xl font-heading font-semibold mb-3">
+                  <h3 className="text-xl font-heading font-semibold mb-3 text-neutral-dark text-center">
                     {option.title}
                   </h3>
                   
-                  <p className="text-red-100 mb-6 text-sm">
+                  <p className="text-gray-600 mb-6 text-sm text-center">
                     {option.description}
                   </p>
                   
@@ -57,7 +57,7 @@ const ContactCTA = () => {
                     href={option.action}
                     variant="outline"
                     size="md"
-                    className={`w-full ${option.color} border-white text-white`}
+                    className={`w-full ${index === 0 ? 'bg-black hover:bg-black' : option.color} text-white border-transparent hover:shadow-lg`}
                   >
                     {option.buttonText}
                   </Button>

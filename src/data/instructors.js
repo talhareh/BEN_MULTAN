@@ -1,12 +1,12 @@
 export const instructors = [
   {
     id: 1,
-    name: 'Sir Ahmad Khan',
-    qualification: 'MSc Physics',
-    experience: '10+ years of A Level Physics teaching',
-    specialization: 'A Level Physics',
+    name: 'Mr Abdul Rehman Khan',
+    qualification: '',
+    experience: '',
+    specialization: 'Director of BEN',
     image: '/images/instructors/ahmad-khan.jpg',
-    description: 'Expert in advanced physics concepts with proven track record of A* results'
+    description: ''
   },
   {
     id: 2,

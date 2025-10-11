@@ -16,19 +16,19 @@ const Hero = () => {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight drop-shadow-2xl">
           Top O & A Level Coaching in<br />
-          Multan – Online &<br />
+          <span className="text-primary-gold">Multan</span> – Online &<br />
           On-Campus
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Achieve A* results with Multan's most trusted coaching center. Expert instructors, 
+        <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg bg-black/20 backdrop-blur-sm rounded-lg p-4">
+          Achieve <span className="text-primary-gold font-semibold">A* results</span> with Multan's most trusted coaching center. Expert instructors, 
           Cambridge/Edexcel curriculum, flexible class formats—on-campus and online.
         </p>
 
@@ -53,9 +53,9 @@ const Hero = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-8 text-gray-300 -mb-12">
-          <p className="text-lg mb-0">
-            ✨ Cambridge & Edexcel Certified • 90%+ A & A* Results • Online & On-Campus Classes
+        <div className="mt-8 text-white -mb-12">
+          <p className="text-lg mb-0 drop-shadow-lg bg-black/30 backdrop-blur-sm rounded-full px-6 py-3 inline-block">
+            ✨ Cambridge & Edexcel Certified • <span className="text-primary-gold font-semibold">90%+ A & A* Results</span> • Online & On-Campus Classes
           </p>
         </div>
       </div>

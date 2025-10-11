@@ -44,7 +44,7 @@ const NotificationSlideBar = ({
   };
 
   const handleAction = () => {
-    if (actionUrl) {
+    if (actionUrl && typeof window !== 'undefined') {
       window.open(actionUrl, '_blank');
     }
   };

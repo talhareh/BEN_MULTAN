@@ -102,27 +102,27 @@ const ContactHero = () => {
 
           {/* Contact Stats */}
           <div className="relative">
-            <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-heading font-bold mb-6 text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+              <h3 className="text-2xl font-heading font-bold mb-6 text-center text-primary-red">
                 We're Here to Help
               </h3>
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">24/7</div>
-                  <div className="text-red-200 text-sm">WhatsApp Support</div>
+                  <div className="text-3xl font-bold mb-2 text-primary-red">24/7</div>
+                  <div className="text-gray-600 text-sm font-medium">WhatsApp Support</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">&lt;1hr</div>
-                  <div className="text-red-200 text-sm">Response Time</div>
+                  <div className="text-3xl font-bold mb-2 text-primary-red">&lt;1hr</div>
+                  <div className="text-gray-600 text-sm font-medium">Response Time</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">6 Days</div>
-                  <div className="text-red-200 text-sm">Office Hours</div>
+                  <div className="text-3xl font-bold mb-2 text-primary-red">6 Days</div>
+                  <div className="text-gray-600 text-sm font-medium">Office Hours</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">Free</div>
-                  <div className="text-red-200 text-sm">Consultation</div>
+                  <div className="text-3xl font-bold mb-2 text-primary-red">Free</div>
+                  <div className="text-gray-600 text-sm font-medium">Consultation</div>
                 </div>
               </div>
             </div>

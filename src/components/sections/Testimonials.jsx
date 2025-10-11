@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faQuoteLeft, faUser } from '@fortawesome/free-solid-svg-icons';
 import Card from '../ui/Card';
@@ -44,9 +45,15 @@ const Testimonials = () => {
                 <FontAwesomeIcon icon={faQuoteLeft} className="text-2xl" />
               </div>
 
-              {/* Student Image Placeholder */}
-              <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 mt-2">
-                <FontAwesomeIcon icon={faUser} className="text-2xl text-gray-400" />
+              {/* Student Image */}
+              <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 mt-2 relative">
+                <Image
+                  src={testimonial.image}
+                  alt={`${testimonial.name} - Student testimonial`}
+                  fill
+                  className="object-cover"
+                  sizes="80px"
+                />
               </div>
 
               {/* Star Rating */}
