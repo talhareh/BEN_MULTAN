@@ -38,23 +38,23 @@ const InstructorsHero = () => {
 
             {/* Key Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
-                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faAward} className="text-red-600" />
+              <div className="text-center group">
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                  <FontAwesomeIcon icon={faAward} className="text-primary-red text-lg" />
                 </div>
-                <div className="text-sm text-gray-300">Subject Specialists</div>
+                <div className="text-sm text-gray-300 font-medium">Subject Specialists</div>
               </div>
-              <div className="text-center">
-                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faGlobe} className="text-red-600" />
+              <div className="text-center group">
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                  <FontAwesomeIcon icon={faGlobe} className="text-primary-red text-lg" />
                 </div>
-                <div className="text-sm text-gray-300">International Experience</div>
+                <div className="text-sm text-gray-300 font-medium">International Experience</div>
               </div>
-              <div className="text-center">
-                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <FontAwesomeIcon icon={faUserGraduate} className="text-red-600" />
+              <div className="text-center group">
+                <div className="bg-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                  <FontAwesomeIcon icon={faUserGraduate} className="text-primary-red text-lg" />
                 </div>
-                <div className="text-sm text-gray-300">A & A* Results</div>
+                <div className="text-sm text-gray-300 font-medium">A & A* Results</div>
               </div>
             </div>
 
@@ -62,14 +62,14 @@ const InstructorsHero = () => {
               <Button 
                 href={whatsappUrl}
                 variant="primary"
-                size="lg"
+                size="md"
               >
                 Meet Our Team
               </Button>
               <Button 
                 href="https://wa.me/+923708382215?text=Hello! I'd like to book a free demo class at BEN."
                 variant="outline"
-                size="lg"
+                size="md"
               >
                 Book Demo Class
               </Button>
@@ -78,18 +78,12 @@ const InstructorsHero = () => {
 
           {/* Faculty Image */}
           <div className="relative">
-            <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
-              <div className="relative rounded-xl h-80 overflow-hidden">
-                <Image
-                  src="/images/instructors/faculty-team.jpg"
-                  alt="Expert faculty team at BEN - professional instructors"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Overlay for better text readability */}
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-              </div>
+            <div className="relative rounded-xl h-80 overflow-hidden">
+              <img
+                src="/images/instructors/faculty txd.jpg"
+                alt="Expert faculty team at BEN - professional instructors"
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Floating Stats */}

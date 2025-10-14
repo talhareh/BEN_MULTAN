@@ -28,9 +28,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: faFacebookBrand, href: '#', color: 'hover:text-blue-600' },
-    { name: 'Instagram', icon: faInstagramBrand, href: '#', color: 'hover:text-pink-600' },
-    { name: 'YouTube', icon: faYoutubeBrand, href: '#', color: 'hover:text-red-600' },
+    { name: 'Facebook', icon: faFacebookBrand, href: 'https://www.facebook.com/profile.php?viewas=100000686899395&id=61576347321971', color: 'hover:text-blue-600' },
+    { name: 'Instagram', icon: faInstagramBrand, href: 'https://www.instagram.com/britisheducationalnetwork/', color: 'hover:text-pink-600' },
+    { name: 'YouTube', icon: faYoutubeBrand, href: 'https://www.youtube.com/@BritishEducationalNetwork', color: 'hover:text-red-600' },
     { name: 'WhatsApp', icon: faWhatsapp, href: whatsappUrl, color: 'hover:text-green-600' }
   ];
 

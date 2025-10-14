@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -73,23 +75,20 @@ const AcademicsHero = () => {
           </div>
 
           {/* Student Image */}
-          <div className="relative">
-            <div className="bg-white rounded-2xl p-4 backdrop-blur-sm">
-              <div className="relative rounded-xl h-80 overflow-hidden">
-                <Image
-                  src="/images/academics/student-with-books.jpg"
-                  alt="Student with books giving thumbs up - representing academic success"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Overlay for better text readability */}
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-              </div>
+          <div className="relative lg:order-2">
+            <div className="relative h-80 w-full overflow-hidden shadow-2xl">
+              <Image
+                src="/images/academics/student-with-books.png"
+                alt="Group of diverse students with books and backpacks - representing academic community and success"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
             
             {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 bg-primary-gold text-primary-red p-4 rounded-full">
+            <div className="absolute -top-4 -right-4 bg-primary-gold text-primary-red p-4 rounded-full shadow-lg">
               <FontAwesomeIcon icon={faAward} className="text-xl" />
             </div>
           </div>

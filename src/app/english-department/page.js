@@ -392,7 +392,7 @@ export default function EnglishDepartment() {
               href={whatsappUrl}
               variant="outline"
               size="lg"
-              className="bg-white text-primary-red border-white hover:bg-red-50"
+              className="bg-white !text-primary-red hover:!text-primary-red border-white hover:bg-red-50 shadow-lg"
             >
               Get Course Information
             </Button>

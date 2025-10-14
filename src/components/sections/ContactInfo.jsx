@@ -37,9 +37,9 @@ const ContactInfo = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: faFacebook, href: '#', color: 'hover:text-blue-600' },
-    { name: 'Instagram', icon: faInstagram, href: '#', color: 'hover:text-pink-600' },
-    { name: 'YouTube', icon: faYoutube, href: '#', color: 'hover:text-red-600' },
+    { name: 'Facebook', icon: faFacebook, href: 'https://www.facebook.com/profile.php?viewas=100000686899395&id=61576347321971', color: 'hover:text-blue-600' },
+    { name: 'Instagram', icon: faInstagram, href: 'https://www.instagram.com/britisheducationalnetwork/', color: 'hover:text-pink-600' },
+    { name: 'YouTube', icon: faYoutube, href: 'https://www.youtube.com/@BritishEducationalNetwork', color: 'hover:text-red-600' },
   ];
 
   return (
